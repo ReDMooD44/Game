@@ -1,2 +1,20 @@
-# Auto detect text files and perform LF normalization
+# Normalise line endings in the repository; check out native on each machine.
+# Without this every GDScript file churns between LF and CRLF.
 * text=auto
+
+*.gd       text eol=lf
+*.gdshader text eol=lf
+*.tscn     text eol=lf
+*.tres     text eol=lf
+*.cfg      text eol=lf
+*.md       text eol=lf
+*.godot    text eol=lf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.tga  binary
+*.fbx  binary
+*.glb  binary
+*.apk  binary
+*.keystore binary
