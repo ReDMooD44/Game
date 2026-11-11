@@ -1,0 +1,17 @@
+.godot/
+android/
+export/
+*.apk
+*.aab
+*.tmp
+build/
+
+# The Canyon Set source pack. It is an input, not a deliverable: the meshes it
+# supplies are baked into resources/canyon_props.tres by tools/bake_props.gd,
+# nothing loads it at runtime and it is excluded from the export. 47 MB, and
+# one of its paths is long enough that Windows refuses to index it.
+assets/LoafbrrAssets/
+
+# Signing key. Must be kept, must not be committed: an Android app can only
+# be updated by the key that first signed it.
+release/
