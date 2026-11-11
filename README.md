@@ -6,10 +6,25 @@ Dar bir kanyonda alçak uçuşla arcade jet yarışı. Oyuncu + 5 bot, tur/sekt�
 sistemi, ghost'lu time trial. Referans: `SPEC.md` ve oynanış videosundan okunan
 HUD/kanyon düzeni.
 
+![Kanyonda yarış](docs/screenshots/race.jpg)
+
+Kanyonun tamamı kodla üretiliyor: bir spline boyunca süpürülen kesit, teraslı
+duvarlar, tırtıklı zirve çizgisi. Gerçek zamanlı gölge bütçe dışı olduğu için
+duvarların ışığı — gökyüzü görünürlüğü ve karşı kenarın kestiği gölge çizgisi —
+yükleme anında CPU'da hesaplanıp köşe noktalarına yazılıyor.
+
 ## Kurulum
 
 `build/canyon-jet-racer.apk` — release imzalı, 58,5 MB, Android 7.0+ (minSdk 24).
 Telefona kopyalayıp açman yeterli; "bilinmeyen kaynak" iznini istemesi normal.
+
+## Ekran görüntüleri
+
+| | |
+|---|---|
+| ![Ana menü](docs/screenshots/title.jpg)<br>**Ana menü** | ![Harita seçimi](docs/screenshots/maps.jpg)<br>**Harita seçimi** — kartlardaki şekil, uçacağın pistin kendi spline'ından çiziliyor |
+| ![Grid](docs/screenshots/grid.jpg)<br>**Geri sayım** — bütün saha GO'ya kadar duruyor | ![Boost](docs/screenshots/boost.jpg)<br>**Boost** — 1250 kt, M 1.85 |
+| ![Ayarlar](docs/screenshots/settings.jpg)<br>**Ayarlar** — sıradaki iz efektinin şartı burada yazılı | ![Sonuç](docs/screenshots/results.jpg)<br>**Sonuç kartı** — oturumun ne kadar sürdüğünü de yazar |
 
 ## Kaynaktan derleme
 
